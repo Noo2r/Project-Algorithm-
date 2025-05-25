@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Huffman Coding Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Huffman Coding Compression Tool</h1>
+
+    <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+    <button onclick="compress()">Compress</button>
+
+    <div class="output">
+      <h3>Character Frequencies</h3>
+      <pre id="frequencies"></pre>
+
+      <h3>Tree (Graphical)</h3>
+      <div id="tree-container"></div>
+
+      <h3>Huffman Codes</h3>
+      <pre id="codes"></pre>
+
+      <h3>Encoded Binary</h3>
+      <pre id="encoded"></pre>
+
+      <hr>
+
+      <h3>Encoded Binary Input</h3>
+      <textarea id="encodedInput" placeholder="Paste binary here to decode manually..."></textarea>
+
+      <button onclick="decompress()">Decompress</button>
+
+      <h3>Decoded Text Output</h3>
+      <pre id="decoded"></pre>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
